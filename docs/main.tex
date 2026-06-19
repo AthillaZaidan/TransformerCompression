@@ -286,8 +286,10 @@ The results show that DP is most useful when budget constraints make local decis
 The main limitation is that fake quantization evaluates the effect of reduced precision without implementing hardware-level low-bit inference. Therefore, the reported compression ratios estimate weight storage reduction, not actual end-to-end latency improvement. Another limitation is the additive loss assumption: the final behavior of jointly quantized layers may differ from the sum of individual layer sensitivities. Future work can evaluate the selected DP configurations with actual joint quantization, include activation quantization, and test larger Transformer families or encoder-decoder architectures.
 
 \section*{Appendix}
-\subsection*{A. Experiment Artifacts}
-The main experiment notebook is provided in the \texttt{notebooks/} directory as \texttt{bitweaver\_bert\_base\_experiment.ipynb}. The generated sensitivity and comparison CSV files are stored under \texttt{docs/bert-base/}. The complete project repository is available at \url{https://github.com/AthillaZaidan/TransformerCompression}.
+\subsection*{A. Github Repository for this project}
+https://github.com/AthillaZaidan/TransformerCompression
+\subsection*{B. Youtube Video}
+https://youtu.be/jFTqL7NzckI
 
 \section*{Acknowledgment}
 The author thanks the lecturers and assistants of IF2211 Strategi Algoritma for providing the academic framework that made this project possible. The author also thanks family and friends for their support throughout the writing and experimentation process.
